@@ -1,0 +1,1548 @@
+{
+  "mod_elements": [
+    {
+      "name": "PlayerDamageListener",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_damage_listener",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/procedures/PlayerDamageListenerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GodModeSet",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "god_mode_set",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/procedures/GodModeSetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GodModeCommand",
+      "type": "command",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "god_mode_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/GodModeCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "DayProcedure",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "day_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/procedures/DayProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DayCommand",
+      "type": "command",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "day_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/DayCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "NightProcedure",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "night_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/procedures/NightProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NightCommand",
+      "type": "command",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "night_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/NightCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "RepairProcedure",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "repair_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/procedures/RepairProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RepairCommand",
+      "type": "command",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "repair_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/RepairCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "SetMute",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_mute",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/procedures/SetMuteProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MutedProcedure",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "muted_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/procedures/MutedProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MuteCommand",
+      "type": "command",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mute_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/MuteCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "UnmuteProcedure",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unmute_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/procedures/UnmuteProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Unmute",
+      "type": "command",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unmute",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/UnmuteCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "SetHomeProcedure",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_home_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/procedures/SetHomeProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SetHomeCommand",
+      "type": "command",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_home_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/SetHomeCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "HomeProcedure",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "home_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/procedures/HomeProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HomeCommand",
+      "type": "command",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "home_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/HomeCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "DelHomeProcedure",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "del_home_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/procedures/DelHomeProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DelHomeCommand",
+      "type": "command",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "del_home_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/DelHomeCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "SuicideProcedure",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "suicide_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/procedures/SuicideProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SuicideCommand",
+      "type": "command",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "suicide_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/SuicideCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "TopProcedure",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "top_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/procedures/TopProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TopCommand",
+      "type": "command",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "top_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/TopCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "CreativeProcedure",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creative_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/procedures/CreativeProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CreativeCommand",
+      "type": "command",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creative_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/CreativeCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "SurvivalProcedure",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "survival_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/procedures/SurvivalProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SurvivalCommand",
+      "type": "command",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "survival_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/SurvivalCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "FlyProcedure",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fly_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/procedures/FlyProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FlightCommand",
+      "type": "command",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flight_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/FlightCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "SpectatorProcedure",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spectator_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/procedures/SpectatorProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SpectatorCommand",
+      "type": "command",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spectator_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/SpectatorCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "WorldProcedure",
+      "type": "procedure",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "world_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/procedures/WorldProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WorldCommand",
+      "type": "command",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "world_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/WorldCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "ClosestProcedure",
+      "type": "procedure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "closest_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/procedures/ClosestProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ClosestCommand",
+      "type": "command",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "closest_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/ClosestCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "SetWarp",
+      "type": "procedure",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_warp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/procedures/SetWarpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SetWarpCommand",
+      "type": "command",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_warp_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/SetWarpCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "WarpProcedure",
+      "type": "procedure",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warp_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/procedures/WarpProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WarpCommand",
+      "type": "command",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warp_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/WarpCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "DelWarpProcedure",
+      "type": "procedure",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "del_warp_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/procedures/DelWarpProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DelWarpCommand",
+      "type": "command",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "del_warp_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/DelWarpCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "SudoProcedure",
+      "type": "procedure",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sudo_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/procedures/SudoProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SudoCommand",
+      "type": "command",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sudo_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/SudoCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "FireballProcedure",
+      "type": "procedure",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fireball_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/procedures/FireballProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FireballCommand",
+      "type": "command",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fireball_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/FireballCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "RenameProcedure",
+      "type": "procedure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rename_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/procedures/RenameProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RenameCommand",
+      "type": "command",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rename_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/RenameCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "HealProcedure",
+      "type": "procedure",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heal_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/procedures/HealProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HealCommand",
+      "type": "command",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heal_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/HealCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "FeedCommand",
+      "type": "command",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "feed_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/FeedCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "NukeProcedure",
+      "type": "procedure",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nuke_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/procedures/NukeProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NukeCommand",
+      "type": "command",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nuke_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/NukeCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "TempBanProcedure",
+      "type": "procedure",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "temp_ban_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/procedures/TempBanProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TempBanCommand",
+      "type": "command",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "temp_ban_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/TempBanCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "CustomTextProcedure",
+      "type": "procedure",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_text_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/procedures/CustomTextProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CustomTextCommand",
+      "type": "command",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_text_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/CustomTextCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "TextCommand",
+      "type": "command",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "text_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/TextCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "ReturnDisposalProcedure",
+      "type": "procedure",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_disposal_procedure",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/procedures/ReturnDisposalProcedureProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "DisposalGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "disposal_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/client/gui/DisposalGUIScreen.java",
+          "src/main/java/net/mcreator/essentialcommands/world/inventory/DisposalGUIMenu.java",
+          "src/main/java/net/mcreator/essentialcommands/network/DisposalGUIButtonMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "DisposalProcedure",
+      "type": "procedure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "disposal_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/procedures/DisposalProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DisposalCommand",
+      "type": "command",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "disposal_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/DisposalCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "TrashCommand",
+      "type": "command",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trash_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/TrashCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "HatProcedure",
+      "type": "procedure",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hat_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/procedures/HatProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HatCommand",
+      "type": "command",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hat_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/HatCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "LightningProcedure",
+      "type": "procedure",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightning_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/procedures/LightningProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StrikeCommand",
+      "type": "command",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strike_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/StrikeCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "LightningCommand",
+      "type": "command",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightning_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/LightningCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "ThunderCommand",
+      "type": "command",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thunder_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/ThunderCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "TrashCleanProcedure",
+      "type": "procedure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trash_clean_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/procedures/TrashCleanProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SunCommand",
+      "type": "command",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sun_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/SunCommandCommand.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "GodMode",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "Mute",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "HomeX",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "HomeY",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "HomeZ",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "Home",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "Flight",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "Warp1X",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Warp1Y",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Warp1Z",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Warp1",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "Kit1",
+      "type": "itemstack",
+      "scope": "map",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "TempBan",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "gui.essential_commands.disposal_gui.button_clean": "Clean"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "essential_commands",
+    "modName": "Essential Commands",
+    "version": "1.0.0",
+    "description": "Essential Commands!",
+    "author": "The_WereF0X",
+    "websiteURL": "https://discord.gg/qTyD5kPGVD",
+    "license": "All Rights Reserved",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": true,
+    "updateURL": "https://discord.gg/qTyD5kPGVD",
+    "modPicture": "minecraft_title",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "The_WereF0X",
+    "modElementsPackage": "net.mcreator.essentialcommands",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300336712
+}

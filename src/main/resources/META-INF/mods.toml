@@ -1,0 +1,25 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="essential_commands"
+version="1.0.0"
+displayName="Essential Commands"
+credits="The_WereF0X"
+displayURL="https://discord.gg/qTyD5kPGVD"
+updateJSONURL="https://discord.gg/qTyD5kPGVD"
+logoFile="logo.png"
+authors="The_WereF0X"
+description="Essential Commands!"
+
+[[dependencies.essential_commands]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+

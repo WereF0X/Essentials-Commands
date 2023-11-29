@@ -1,0 +1,9 @@
+{
+  "_fv": 47,
+  "_type": "command",
+  "definition": {
+    "commandName": "rename",
+    "permissionLevel": "4",
+    "argsxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"args_start\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"message\"><field name=\"name\">name</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">RenameProcedure</field></block></statement></block></next></block></xml>"
+  }
+}
