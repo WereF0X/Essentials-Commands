@@ -29,7 +29,7 @@ public class HatCommandCommand {
 				entity = FakePlayerFactory.getMinecraft(world);
 			Direction direction = entity.getDirection();
 
-			HatProcedureProcedure.execute(entity);
+			HatProcedureProcedure.execute(world, x, y, z, entity);
 			return 0;
 		}));
 	}

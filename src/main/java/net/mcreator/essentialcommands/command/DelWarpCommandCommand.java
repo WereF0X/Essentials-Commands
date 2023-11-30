@@ -15,11 +15,13 @@ import net.minecraft.commands.Commands;
 
 import net.mcreator.essentialcommands.procedures.DelWarpProcedureProcedure;
 
+import com.mojang.brigadier.arguments.StringArgumentType;
+
 @Mod.EventBusSubscriber
 public class DelWarpCommandCommand {
 	@SubscribeEvent
 	public static void registerCommand(RegisterCommandsEvent event) {
-		event.getDispatcher().register(Commands.literal("delwarp").requires(s -> s.hasPermission(4)).executes(arguments -> {
+		event.getDispatcher().register(Commands.literal("delwarp").requires(s -> s.hasPermission(4)).then(Commands.argument("name", StringArgumentType.word()).executes(arguments -> {
 			ServerLevel world = arguments.getSource().getLevel();
 			double x = arguments.getSource().getPosition().x();
 			double y = arguments.getSource().getPosition().y();
@@ -29,8 +31,8 @@ public class DelWarpCommandCommand {
 				entity = FakePlayerFactory.getMinecraft(world);
 			Direction direction = entity.getDirection();
 
-			DelWarpProcedureProcedure.execute(world, x, y, z);
+			DelWarpProcedureProcedure.execute(world, x, y, z, arguments);
 			return 0;
-		}));
+		})));
 	}
 }

@@ -13,32 +13,69 @@ import net.minecraft.commands.CommandSource;
 import net.mcreator.essentialcommands.network.EssentialCommandsModVariables;
 import net.mcreator.essentialcommands.EssentialCommandsMod;
 
+import com.mojang.brigadier.context.CommandContext;
+import com.mojang.brigadier.arguments.StringArgumentType;
+
 public class WarpProcedureProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+	public static void execute(LevelAccessor world, double x, double y, double z, CommandContext<CommandSourceStack> arguments, Entity entity) {
 		if (entity == null)
 			return;
-		if (EssentialCommandsModVariables.MapVariables.get(world).Warp1 == true) {
-			if (world instanceof ServerLevel _level)
-				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-						"/tellraw @p {\"text\":\"Teleporting in 5 seconds...\",\"color\":\"yellow\"}");
-			EssentialCommandsMod.queueServerWork(100, () -> {
-				if (!entity.isSprinting()) {
-					{
-						Entity _ent = entity;
-						_ent.teleportTo(EssentialCommandsModVariables.MapVariables.get(world).Warp1X, EssentialCommandsModVariables.MapVariables.get(world).Warp1Y, EssentialCommandsModVariables.MapVariables.get(world).Warp1Z);
-						if (_ent instanceof ServerPlayer _serverPlayer)
-							_serverPlayer.connection.teleport(EssentialCommandsModVariables.MapVariables.get(world).Warp1X, EssentialCommandsModVariables.MapVariables.get(world).Warp1Y, EssentialCommandsModVariables.MapVariables.get(world).Warp1Z,
-									_ent.getYRot(), _ent.getXRot());
+		if ((StringArgumentType.getString(arguments, "name")).equals(EssentialCommandsModVariables.MapVariables.get(world).Warp1Name)) {
+			if (EssentialCommandsModVariables.MapVariables.get(world).Warp1 == true) {
+				if (world instanceof ServerLevel _level)
+					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							"/tellraw @p {\"text\":\"Teleporting in 5 seconds...\",\"color\":\"yellow\"}");
+				EssentialCommandsMod.queueServerWork(100, () -> {
+					if (!entity.isSprinting()) {
+						{
+							Entity _ent = entity;
+							_ent.teleportTo(EssentialCommandsModVariables.MapVariables.get(world).Warp1X, EssentialCommandsModVariables.MapVariables.get(world).Warp1Y, EssentialCommandsModVariables.MapVariables.get(world).Warp1Z);
+							if (_ent instanceof ServerPlayer _serverPlayer)
+								_serverPlayer.connection.teleport(EssentialCommandsModVariables.MapVariables.get(world).Warp1X, EssentialCommandsModVariables.MapVariables.get(world).Warp1Y,
+										EssentialCommandsModVariables.MapVariables.get(world).Warp1Z, _ent.getYRot(), _ent.getXRot());
+						}
+						if (world instanceof ServerLevel _level)
+							_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+									"/tellraw @p {\"text\":\"Teleported!\",\"color\":\"yellow\"}");
+					} else {
+						if (world instanceof ServerLevel _level)
+							_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+									"/tellraw @p {\"text\":\"You moved and your teleport was canceled!\",\"color\":\"yellow\"}");
 					}
-					if (world instanceof ServerLevel _level)
-						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-								"/tellraw @p {\"text\":\"Teleported!\",\"color\":\"yellow\"}");
-				} else {
-					if (world instanceof ServerLevel _level)
-						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-								"/tellraw @p {\"text\":\"You moved and your teleport was canceled!.\",\"color\":\"yellow\"}");
-				}
-			});
+				});
+			} else {
+				if (world instanceof ServerLevel _level)
+					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							"/tellraw @p {\"text\":\"The Warp doesn't exist!\",\"color\":\"yellow\"}");
+			}
+		} else if ((StringArgumentType.getString(arguments, "name")).equals(EssentialCommandsModVariables.MapVariables.get(world).Warp2Name)) {
+			if (EssentialCommandsModVariables.MapVariables.get(world).Warp2 == true) {
+				if (world instanceof ServerLevel _level)
+					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							"/tellraw @p {\"text\":\"Teleporting in 5 seconds...\",\"color\":\"yellow\"}");
+				EssentialCommandsMod.queueServerWork(100, () -> {
+					if (!entity.isSprinting()) {
+						{
+							Entity _ent = entity;
+							_ent.teleportTo(EssentialCommandsModVariables.MapVariables.get(world).Warp2X, EssentialCommandsModVariables.MapVariables.get(world).Warp2Y, EssentialCommandsModVariables.MapVariables.get(world).Warp2Z);
+							if (_ent instanceof ServerPlayer _serverPlayer)
+								_serverPlayer.connection.teleport(EssentialCommandsModVariables.MapVariables.get(world).Warp2X, EssentialCommandsModVariables.MapVariables.get(world).Warp2Y,
+										EssentialCommandsModVariables.MapVariables.get(world).Warp2Z, _ent.getYRot(), _ent.getXRot());
+						}
+						if (world instanceof ServerLevel _level)
+							_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+									"/tellraw @p {\"text\":\"Teleported!\",\"color\":\"yellow\"}");
+					} else {
+						if (world instanceof ServerLevel _level)
+							_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+									"/tellraw @p {\"text\":\"You moved and your teleport was canceled!\",\"color\":\"yellow\"}");
+					}
+				});
+			} else {
+				if (world instanceof ServerLevel _level)
+					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							"/tellraw @p {\"text\":\"The Warp doesn't exist!\",\"color\":\"yellow\"}");
+			}
 		} else {
 			if (world instanceof ServerLevel _level)
 				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),

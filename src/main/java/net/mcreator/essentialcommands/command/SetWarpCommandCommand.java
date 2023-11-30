@@ -15,11 +15,13 @@ import net.minecraft.commands.Commands;
 
 import net.mcreator.essentialcommands.procedures.SetWarpProcedure;
 
+import com.mojang.brigadier.arguments.StringArgumentType;
+
 @Mod.EventBusSubscriber
 public class SetWarpCommandCommand {
 	@SubscribeEvent
 	public static void registerCommand(RegisterCommandsEvent event) {
-		event.getDispatcher().register(Commands.literal("setwarp").requires(s -> s.hasPermission(4)).executes(arguments -> {
+		event.getDispatcher().register(Commands.literal("setwarp").requires(s -> s.hasPermission(4)).then(Commands.argument("name", StringArgumentType.word()).executes(arguments -> {
 			ServerLevel world = arguments.getSource().getLevel();
 			double x = arguments.getSource().getPosition().x();
 			double y = arguments.getSource().getPosition().y();
@@ -29,8 +31,8 @@ public class SetWarpCommandCommand {
 				entity = FakePlayerFactory.getMinecraft(world);
 			Direction direction = entity.getDirection();
 
-			SetWarpProcedure.execute(world, x, y, z, entity);
+			SetWarpProcedure.execute(world, x, y, z, arguments, entity);
 			return 0;
-		}));
+		})));
 	}
 }

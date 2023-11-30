@@ -13,13 +13,15 @@ import net.minecraft.commands.Commands;
 
 import net.mcreator.essentialcommands.procedures.WarpProcedureProcedure;
 
+import com.mojang.brigadier.arguments.StringArgumentType;
+
 @Mod.EventBusSubscriber
 public class WarpCommandCommand {
 	@SubscribeEvent
 	public static void registerCommand(RegisterCommandsEvent event) {
 		event.getDispatcher().register(Commands.literal("warp")
 
-				.executes(arguments -> {
+				.then(Commands.argument("name", StringArgumentType.word()).executes(arguments -> {
 					ServerLevel world = arguments.getSource().getLevel();
 					double x = arguments.getSource().getPosition().x();
 					double y = arguments.getSource().getPosition().y();
@@ -29,8 +31,8 @@ public class WarpCommandCommand {
 						entity = FakePlayerFactory.getMinecraft(world);
 					Direction direction = entity.getDirection();
 
-					WarpProcedureProcedure.execute(world, x, y, z, entity);
+					WarpProcedureProcedure.execute(world, x, y, z, arguments, entity);
 					return 0;
-				}));
+				})));
 	}
 }

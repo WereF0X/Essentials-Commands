@@ -148,6 +148,12 @@ public class EssentialCommandsModVariables {
 		public double Warp1Z = 0;
 		public boolean Warp1 = false;
 		public ItemStack Kit1 = ItemStack.EMPTY;
+		public double Warp2X = 0;
+		public double Warp2Y = 0;
+		public double Warp2Z = 0;
+		public boolean Warp2 = false;
+		public String Warp1Name = "\"\"";
+		public String Warp2Name = "\"\"";
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -161,6 +167,12 @@ public class EssentialCommandsModVariables {
 			Warp1Z = nbt.getDouble("Warp1Z");
 			Warp1 = nbt.getBoolean("Warp1");
 			Kit1 = ItemStack.of(nbt.getCompound("Kit1"));
+			Warp2X = nbt.getDouble("Warp2X");
+			Warp2Y = nbt.getDouble("Warp2Y");
+			Warp2Z = nbt.getDouble("Warp2Z");
+			Warp2 = nbt.getBoolean("Warp2");
+			Warp1Name = nbt.getString("Warp1Name");
+			Warp2Name = nbt.getString("Warp2Name");
 		}
 
 		@Override
@@ -170,6 +182,12 @@ public class EssentialCommandsModVariables {
 			nbt.putDouble("Warp1Z", Warp1Z);
 			nbt.putBoolean("Warp1", Warp1);
 			nbt.put("Kit1", Kit1.save(new CompoundTag()));
+			nbt.putDouble("Warp2X", Warp2X);
+			nbt.putDouble("Warp2Y", Warp2Y);
+			nbt.putDouble("Warp2Z", Warp2Z);
+			nbt.putBoolean("Warp2", Warp2);
+			nbt.putString("Warp1Name", Warp1Name);
+			nbt.putString("Warp2Name", Warp2Name);
 			return nbt;
 		}
 

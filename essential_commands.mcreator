@@ -755,50 +755,6 @@
       }
     },
     {
-      "name": "ClosestProcedure",
-      "type": "procedure",
-      "sortid": 35,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "closest_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/essentialcommands/procedures/ClosestProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "ClosestCommand",
-      "type": "command",
-      "sortid": 36,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "closest_command",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/essentialcommands/command/ClosestCommandCommand.java"
-        ]
-      }
-    },
-    {
       "name": "SetWarp",
       "type": "procedure",
       "sortid": 37,
@@ -810,6 +766,10 @@
           "src/main/java/net/mcreator/essentialcommands/procedures/SetWarpProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
           {
             "name": "entity",
             "type": "entity"
@@ -859,6 +819,10 @@
         ],
         "dependencies": [
           {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
             "name": "entity",
             "type": "entity"
           },
@@ -906,6 +870,10 @@
           "src/main/java/net/mcreator/essentialcommands/procedures/DelWarpProcedureProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
           {
             "name": "x",
             "type": "number"
@@ -1321,6 +1289,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -1511,6 +1495,42 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "Warp2X",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Warp2Y",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Warp2Z",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Warp2",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "Warp1Name",
+      "type": "string",
+      "scope": "map",
+      "value": "\"\""
+    },
+    {
+      "name": "Warp2Name",
+      "type": "string",
+      "scope": "map",
+      "value": "\"\""
     }
   ],
   "sound_elements": [],
@@ -1526,7 +1546,7 @@
   "workspaceSettings": {
     "modid": "essential_commands",
     "modName": "Essential Commands",
-    "version": "1.0.0",
+    "version": "1.1.1",
     "description": "Essential Commands!",
     "author": "The_WereF0X",
     "websiteURL": "https://discord.gg/qTyD5kPGVD",
