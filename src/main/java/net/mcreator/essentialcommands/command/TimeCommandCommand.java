@@ -1,8 +1,6 @@
 
 package net.mcreator.essentialcommands.command;
 
-import org.checkerframework.checker.units.qual.s;
-
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegisterCommandsEvent;
@@ -13,17 +11,15 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.commands.Commands;
 
-import net.mcreator.essentialcommands.procedures.SummonProcedureProcedure;
-
-import com.mojang.brigadier.arguments.StringArgumentType;
-import com.mojang.brigadier.arguments.DoubleArgumentType;
+import net.mcreator.essentialcommands.procedures.TimeProcedureProcedure;
 
 @Mod.EventBusSubscriber
-public class SpawnCommandCommand {
+public class TimeCommandCommand {
 	@SubscribeEvent
 	public static void registerCommand(RegisterCommandsEvent event) {
-		event.getDispatcher()
-				.register(Commands.literal("mobspawn").requires(s -> s.hasPermission(4)).then(Commands.argument("entity", StringArgumentType.word()).then(Commands.argument("amount", DoubleArgumentType.doubleArg(1, 100)).executes(arguments -> {
+		event.getDispatcher().register(Commands.literal("time")
+
+				.executes(arguments -> {
 					ServerLevel world = arguments.getSource().getLevel();
 					double x = arguments.getSource().getPosition().x();
 					double y = arguments.getSource().getPosition().y();
@@ -33,8 +29,8 @@ public class SpawnCommandCommand {
 						entity = FakePlayerFactory.getMinecraft(world);
 					Direction direction = entity.getDirection();
 
-					SummonProcedureProcedure.execute(world, x, y, z, arguments, entity);
+					TimeProcedureProcedure.execute(world, x, y, z);
 					return 0;
-				}))));
+				}));
 	}
 }

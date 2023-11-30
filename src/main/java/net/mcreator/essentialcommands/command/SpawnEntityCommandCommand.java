@@ -19,11 +19,11 @@ import com.mojang.brigadier.arguments.StringArgumentType;
 import com.mojang.brigadier.arguments.DoubleArgumentType;
 
 @Mod.EventBusSubscriber
-public class SpawnCommandCommand {
+public class SpawnEntityCommandCommand {
 	@SubscribeEvent
 	public static void registerCommand(RegisterCommandsEvent event) {
 		event.getDispatcher()
-				.register(Commands.literal("mobspawn").requires(s -> s.hasPermission(4)).then(Commands.argument("entity", StringArgumentType.word()).then(Commands.argument("amount", DoubleArgumentType.doubleArg(1, 100)).executes(arguments -> {
+				.register(Commands.literal("spawnentity").requires(s -> s.hasPermission(4)).then(Commands.argument("entity", StringArgumentType.word()).then(Commands.argument("amount", DoubleArgumentType.doubleArg(1, 100)).executes(arguments -> {
 					ServerLevel world = arguments.getSource().getLevel();
 					double x = arguments.getSource().getPosition().x();
 					double y = arguments.getSource().getPosition().y();

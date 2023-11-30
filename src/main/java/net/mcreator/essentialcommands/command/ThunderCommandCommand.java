@@ -15,11 +15,13 @@ import net.minecraft.commands.Commands;
 
 import net.mcreator.essentialcommands.procedures.LightningProcedureProcedure;
 
+import com.mojang.brigadier.arguments.DoubleArgumentType;
+
 @Mod.EventBusSubscriber
 public class ThunderCommandCommand {
 	@SubscribeEvent
 	public static void registerCommand(RegisterCommandsEvent event) {
-		event.getDispatcher().register(Commands.literal("thunder").requires(s -> s.hasPermission(4)).executes(arguments -> {
+		event.getDispatcher().register(Commands.literal("thunder").requires(s -> s.hasPermission(4)).then(Commands.argument("times", DoubleArgumentType.doubleArg(1, 100)).executes(arguments -> {
 			ServerLevel world = arguments.getSource().getLevel();
 			double x = arguments.getSource().getPosition().x();
 			double y = arguments.getSource().getPosition().y();
@@ -29,8 +31,8 @@ public class ThunderCommandCommand {
 				entity = FakePlayerFactory.getMinecraft(world);
 			Direction direction = entity.getDirection();
 
-			LightningProcedureProcedure.execute(world, entity);
+			LightningProcedureProcedure.execute(world, arguments, entity);
 			return 0;
-		}));
+		})));
 	}
 }

@@ -1335,6 +1335,10 @@
         ],
         "dependencies": [
           {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
             "name": "entity",
             "type": "entity"
           },
@@ -1662,6 +1666,230 @@
           "src/main/java/net/mcreator/essentialcommands/command/FurnaceCommandCommand.java"
         ]
       }
+    },
+    {
+      "name": "ExtinguishProcedure",
+      "type": "procedure",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "extinguish_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/procedures/ExtinguishProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ExtinguishCommand",
+      "type": "command",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "extinguish_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/ExtinguishCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "CoolCommand",
+      "type": "command",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cool_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/CoolCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "CoolOffCommand",
+      "type": "command",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cool_off_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/CoolOffCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "TimeProcedure",
+      "type": "procedure",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/procedures/TimeProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TimeCommand",
+      "type": "command",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/TimeCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "DateCommand",
+      "type": "command",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "date_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/DateCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "SetSpawnProcedure",
+      "type": "procedure",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_spawn_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/procedures/SetSpawnProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SetSpawnCommand",
+      "type": "command",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_spawn_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/SetSpawnCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "SpawnProcedure",
+      "type": "procedure",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/procedures/SpawnProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SpawnEntityCommand",
+      "type": "command",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_entity_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/SpawnEntityCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "SpawnTpCommand",
+      "type": "command",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_tp_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/SpawnTpCommandCommand.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1732,12 +1960,6 @@
       "value": "false"
     },
     {
-      "name": "Kit1",
-      "type": "itemstack",
-      "scope": "map",
-      "value": "ItemStack.EMPTY"
-    },
-    {
       "name": "TempBan",
       "type": "number",
       "scope": "player_persistent",
@@ -1778,6 +2000,24 @@
       "type": "string",
       "scope": "map",
       "value": "\"\""
+    },
+    {
+      "name": "SpawnX",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "SpawnY",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "SpawnZ",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
     }
   ],
   "sound_elements": [],

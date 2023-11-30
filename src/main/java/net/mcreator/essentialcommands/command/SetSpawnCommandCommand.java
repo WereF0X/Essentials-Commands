@@ -13,15 +13,13 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.commands.Commands;
 
-import net.mcreator.essentialcommands.procedures.LightningProcedureProcedure;
-
-import com.mojang.brigadier.arguments.DoubleArgumentType;
+import net.mcreator.essentialcommands.procedures.SetSpawnProcedureProcedure;
 
 @Mod.EventBusSubscriber
-public class LightningCommandCommand {
+public class SetSpawnCommandCommand {
 	@SubscribeEvent
 	public static void registerCommand(RegisterCommandsEvent event) {
-		event.getDispatcher().register(Commands.literal("lightning").requires(s -> s.hasPermission(4)).then(Commands.argument("times", DoubleArgumentType.doubleArg(1, 100)).executes(arguments -> {
+		event.getDispatcher().register(Commands.literal("setspawn").requires(s -> s.hasPermission(4)).executes(arguments -> {
 			ServerLevel world = arguments.getSource().getLevel();
 			double x = arguments.getSource().getPosition().x();
 			double y = arguments.getSource().getPosition().y();
@@ -31,8 +29,8 @@ public class LightningCommandCommand {
 				entity = FakePlayerFactory.getMinecraft(world);
 			Direction direction = entity.getDirection();
 
-			LightningProcedureProcedure.execute(world, arguments, entity);
+			SetSpawnProcedureProcedure.execute(world, x, y, z, entity);
 			return 0;
-		})));
+		}));
 	}
 }
