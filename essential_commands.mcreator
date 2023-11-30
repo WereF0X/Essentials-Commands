@@ -1415,6 +1415,253 @@
           "src/main/java/net/mcreator/essentialcommands/command/SunCommandCommand.java"
         ]
       }
+    },
+    {
+      "name": "EnderChestProcedure",
+      "type": "procedure",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ender_chest_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/procedures/EnderChestProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EnderChestCommand",
+      "type": "command",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ender_chest_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/EnderChestCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "GiveProcedure",
+      "type": "procedure",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "give_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/procedures/GiveProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GiveCommand",
+      "type": "command",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "give_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/GiveCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "SummonProcedure",
+      "type": "procedure",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "summon_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/procedures/SummonProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SpawnCommand",
+      "type": "command",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/SpawnCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "SummonCommand",
+      "type": "command",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "summon_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/SummonCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "WearCommand",
+      "type": "command",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wear_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/WearCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "CraftingTableProcedure",
+      "type": "procedure",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crafting_table_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/procedures/CraftingTableProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CraftCommand",
+      "type": "command",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/CraftCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "FurnaceProcedure",
+      "type": "procedure",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "furnace_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/procedures/FurnaceProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SmeltCommand",
+      "type": "command",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smelt_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/SmeltCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "FurnaceCommand",
+      "type": "command",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "furnace_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/essentialcommands/command/FurnaceCommandCommand.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1546,7 +1793,7 @@
   "workspaceSettings": {
     "modid": "essential_commands",
     "modName": "Essential Commands",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "description": "Essential Commands!",
     "author": "The_WereF0X",
     "websiteURL": "https://discord.gg/qTyD5kPGVD",

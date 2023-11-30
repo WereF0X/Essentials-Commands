@@ -1,0 +1,9 @@
+{
+  "_fv": 47,
+  "_type": "command",
+  "definition": {
+    "commandName": "esummon",
+    "permissionLevel": "4",
+    "argsxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"args_start\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"string\"><field name=\"type\">word</field><field name=\"name\">entity</field><statement name=\"args\"><block type=\"number_min_max\"><field name=\"name\">amount</field><field name=\"min\">1</field><field name=\"max\">100</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">SummonProcedure</field></block></statement></block></statement></block></next></block></xml>"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "_fv": 47,
+  "_type": "command",
+  "definition": {
+    "commandName": "egive",
+    "permissionLevel": "4",
+    "argsxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"args_start\" deletable=\"false\" x=\"102\" y=\"124\"><next><block type=\"entity\"><field name=\"name\">player</field><field name=\"type\">players</field><statement name=\"args\"><block type=\"item\"><field name=\"name\">item</field><statement name=\"args\"><block type=\"number_min_max\"><field name=\"name\">amount</field><field name=\"min\">0</field><field name=\"max\">3000</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">GiveProcedure</field></block></statement></block></statement></block></statement></block></next></block></xml>"
+  }
+}
